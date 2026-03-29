@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-primary: #a78bfa;
+  --color-on-primary: #0a0012;
+  --color-background: #09090b;
+  --color-surface: #0c0c0f;
+  --color-surface-container: #121215;
+  --color-surface-container-low: #0f0f12;
+  --color-surface-container-high: #18181b;
+  --color-on-surface: #fafafa;
+  --color-on-surface-variant: #a1a1aa;
+  --color-outline-variant: #27272a;
+  --color-tertiary: #34d399;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('https://cdn.jsdelivr.net/npm/geist-font@1.1.0/fonts/geist-sans/Geist-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('https://cdn.jsdelivr.net/npm/geist-font@1.1.0/fonts/geist-sans/Geist-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+
+body {
+  @apply bg-background text-on-surface font-sans antialiased;
+}
+
+.tracking-tighter {
+  letter-spacing: -0.02em;
+}
